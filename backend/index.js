@@ -1,6 +1,7 @@
 const express = require('express');
 const config = require('config');
 const sequelize = require('./database');
+const models = require('./models/models');
 
 const app = express();
 const PORT = config.get('port') || 5000;
