@@ -1,8 +1,8 @@
 const express = require('express');
 const config = require('config');
-const app = express();
 const sequelize = require('./database');
 
+const app = express();
 const PORT = config.get('port') || 5000;
 
 async function startServer() {
